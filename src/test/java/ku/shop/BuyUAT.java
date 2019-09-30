@@ -1,14 +1,11 @@
 package ku.shop;
 
-import cucumber.api.CucumberOptions;
-import cucumber.api.junit.Cucumber;
+import io.cucumber.junit.Cucumber;
+import io.cucumber.junit.CucumberOptions;
 import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(
-        format = {"pretty", "html:target/cucumber"},
-        features = {"classpath:features/buy.feature"}
-)
+@CucumberOptions(features = "classpath:features", plugin = {"pretty", "html:target/cucumber"})
 public class BuyUAT {
 
 }
