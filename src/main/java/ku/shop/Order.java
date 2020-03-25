@@ -27,9 +27,8 @@ public class Order {
 
     public double getTotal() {
         double total = 0;
-        for (OrderItem item : items) {
+        for (OrderItem item : items)
             total += item.getSubtotal();
-        }
         return total;
     }
 
